@@ -1,0 +1,9 @@
+Package: com.mootjeuh.wifitoptoggle
+Name: WiFi Top Toggle
+Depends: mobilesubstrate
+Version: 0.1
+Architecture: iphoneos-arm
+Description: Put the WiFi setting toggle in the navigation bar
+Maintainer: Mohamed Marbouh
+Author: Mohamed Marbouh
+Section: Tweaks
