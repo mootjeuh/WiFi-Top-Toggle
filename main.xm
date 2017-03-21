@@ -60,11 +60,11 @@
 	
 	[view addSubview:separator];
 	
-	[view addConstraint:[NSLayoutConstraint constraintWithItem:separator attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:view attribute:NSLayoutAttributeWidth multiplier:1 constant:0]];
-	[view addConstraint:[NSLayoutConstraint constraintWithItem:separator attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:view attribute:NSLayoutAttributeLeading multiplier:1 constant:0]];
-	[view addConstraint:[NSLayoutConstraint constraintWithItem:separator attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0]];
-	[view addConstraint:[NSLayoutConstraint constraintWithItem:separator attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:view attribute:NSLayoutAttributeTop multiplier:1 constant:0]];
-	[view addConstraint:[NSLayoutConstraint constraintWithItem:separator attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:.5]];
+	[separator.leadingAnchor constraintEqualToAnchor:view.leadingAnchor].active = YES;
+	[separator.trailingAnchor constraintEqualToAnchor:view.trailingAnchor].active = YES;
+	[separator.topAnchor constraintEqualToAnchor:view.topAnchor].active = YES;
+	[separator.widthAnchor constraintEqualToAnchor:view.widthAnchor].active = YES;
+	[separator.heightAnchor constraintEqualToAnchor:nil constant:.5].active = YES;
 }
 
 %new
